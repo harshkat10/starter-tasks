@@ -33,3 +33,23 @@ for a0 in range(t):
     sum = (((3 * a * (a+1))//2) + ((5 * b * (b+1))//2) - ((15 * c * (c+1))//2)) 
     print(int(sum))
 ```
+
+# Problem 2
+```
+#!/bin/python3
+
+import sys
+
+
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    total = 0
+    a = 0
+    b = 1
+    while b < n:
+        if b%2==0:   
+            total += b
+        a,b = b,a+b
+    print(total)
+```
